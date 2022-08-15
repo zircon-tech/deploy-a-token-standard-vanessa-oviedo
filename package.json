@@ -1,0 +1,28 @@
+{
+  "name": "deploy-a-token-standard-vanessa-oviedo",
+  "version": "1.0.0",
+  "description": "Deploy your own token by selecting between the ERC20, ERC721, ERC777 standards from the OpenZeppelin library,\r deploy on a testnet by performing tests beforehand in your local environment.",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "openzeppelin-solidity": "^4.6.0",
+    "@truffle/hdwallet-provider": "^1.0.17"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zircon-tech/deploy-a-token-standard-vanessa-oviedo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zircon-tech/deploy-a-token-standard-vanessa-oviedo/issues"
+  },
+  "homepage": "https://github.com/zircon-tech/deploy-a-token-standard-vanessa-oviedo#readme"
+}
