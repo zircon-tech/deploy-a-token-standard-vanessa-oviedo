@@ -1,6 +1,6 @@
 ## Unit 3: Ethereum | Deploy a Token Standard -English Version- 🚀
 
-###My First ERC20 Token 
+### My First ERC20 Token 
 
 I decided to develop a simple ERC20 token called Vanessa Token (a.k.a VANTOK).
 
