@@ -1,45 +1,29 @@
 ## Unit 3: Ethereum | Deploy a Token Standard -English Version- 🚀
 
-### What's this project about?
+###My First ERC20 Token 
 
-Deploy your own token by selecting between the ERC20, ERC721, ERC777 standards from the OpenZeppelin library,
-deploy on a testnet by performing tests beforehand in your local environment.
+I decided to develop a simple ERC20 token called Vanessa Token (a.k.a VANTOK).
 
-#### Requirements 
+Deployment: 
+- This contract was first deployed and tested in a development network: 
 
-- Use any Ethereum Local development environment to deploy your contract. 
-- Upload to this repo the configuration of your local environment. 
-- Update this README with a brief explanation of the project.   
-- Comment your code so your teammates at Zircon can understand it. 
-- Use [OpenZeppelin](https://www.openzeppelin.com/) 
+    development: {
+      host: "127.0.0.1",
+      port: 7545,
+      network_id: "5777"
+    },
+    
+- Then, I also tested in the test network Ropsten by using Infura: 
 
-### List of resources
+   ropsten: {
+    provider: () => new HDWalletProvider(mnemonic, `https://ropsten.infura.io/v3/334d63aed0aa45b2ad2107b1db240326`),
+    network_id: 3,       // Ropsten's id
+    gas: 5500000,        // Ropsten has a lower block limit than mainnet
+    confirmations: 2,    // # of confirmations to wait between deployments. (default: 0)
+    timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
+    skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
+   },
+   
+This is the token definition in Etherscan: https://ropsten.etherscan.io/address/0x126514C8f9Ae1753d189eEddCB977eC66bBc80E4 
 
-#### General
-
-- Token [ERC20](https://docs.openzeppelin.com/contracts/4.x/erc20)
-- Token [ERC721](https://docs.openzeppelin.com/contracts/4.x/erc721)
-- Token [ERC777](https://docs.openzeppelin.com/contracts/4.x/erc777)
-
-## Unidad 3: Ethereum | Desplegar un Token estandar -Versión en español- 🚀
-
-### ¿De qué se trata este proyecto?
-
-Despliega tu propio token seleccionando entre los estandares ERC20, ERC721, ERC777 de la librería OpenZeppelin,
-despliega en una testnet realizando pruebas previamente en tu local environment.
-
-#### Requisitos
-
-- Utiliza un entorno de desarrollo local para desplegar tu contrato. 
-- Sube a este repo la configuración del pryecto. 
-- Actualiza este README con una breve explicación del proyecto. 
-- Comenta tu código para que tus compañeros de Zircon puedan entenderlo.
-- Utiliza [OpenZeppelin](https://www.openzeppelin.com/) 
-
-### Lista de recursos
-
-#### General
-
-- Token [ERC20](https://docs.openzeppelin.com/contracts/4.x/erc20)
-- Token [ERC721](https://docs.openzeppelin.com/contracts/4.x/erc721)
-- Token [ERC777](https://docs.openzeppelin.com/contracts/4.x/erc777)
+Also, I decompiled the contract so you can see it and interact with it without opening the project: https://ropsten.etherscan.io/address/0x126514C8f9Ae1753d189eEddCB977eC66bBc80E4#code 
